@@ -1,12 +1,19 @@
 import './Cell.css';
 
-const Cell = ({rowNum, colNum, cellValue, cellClicked}) => {
+const Cell = ({
+    rowNum,
+    colNum,
+    cellValue,
+    cellClicked,
+    disabled,
+    sudokuIdx
+    }) => {
     return (
-        <div className='cell'
+        <div className={`cell idx#${sudokuIdx} ${disabled ? 'disabledCell': ''}`}
             id={`cell-${rowNum}${colNum}`}
             onClick={cellClicked}
             >
-           {`${cellValue}`}
+           {`${cellValue === 0 ? '': cellValue}`}
         </div>
     );
 };
