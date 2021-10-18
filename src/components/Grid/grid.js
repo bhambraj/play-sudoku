@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import Cell from '../Cell/Cell.js';
 import './grid.css';
-
+import puzzle from '../../samplePuzzleData/puzzle__1';
 class Grid extends Component {
     constructor() {
         super()
+        const sudokuArray = [];
+        puzzle.forEach((elm) => {
+            elm.forEach((val) => sudokuArray.push(val));
+        });
         this.state = {
-            sudokuArray: new Array(81).fill(0)
+            sudokuArray
         };
     }
 
@@ -46,6 +50,7 @@ class Grid extends Component {
                                     key={`${rowNum}-${colNum}`}
                                     rowNum={rowNum}
                                     colNum={colNum}
+                                    cellValue={elem}
                                     cellClicked={this.cellClicked}
                                 />
                             );

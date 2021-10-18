@@ -1,12 +1,12 @@
 import './Cell.css';
 
-const Cell = ({rowNum, colNum, cellClicked}) => {
+const Cell = ({rowNum, colNum, cellValue, cellClicked}) => {
     return (
         <div className='cell'
             id={`cell-${rowNum}${colNum}`}
             onClick={cellClicked}
             >
-           {`${rowNum}${colNum}`}
+           {`${cellValue}`}
         </div>
     );
 };

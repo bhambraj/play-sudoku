@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1><b>Play Sudoku</b></h1>
-      <p class="version-info">{`(${version})`}</p>
+      <p className="version-info">{`(${version})`}</p>
       <Grid />
     </div>
   );
