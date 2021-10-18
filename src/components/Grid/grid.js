@@ -40,7 +40,10 @@ class Grid extends Component {
          * 
          * 2. For now, allow entries from 1 to 9 (keydown) and check that keycode characters are valid 1-9
          */
+    }
 
+    rowClicked(event) {
+        console.log('event.target.value -> ', event.target.value);
     }
 
     render() {

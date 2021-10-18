@@ -1,0 +1,22 @@
+.actionRowContainer {
+  display: inline-block;
+  padding: 0.5%;
+}
+.actionRow {
+  display: grid;
+  grid-template-columns: repeat(10, 58px);
+  grid-gap: 2px;
+}
+.valBtn {
+  background-color: lightseagreen;
+  border-style: solid;
+  border-color: lightgrey;
+  /* center the cell content */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
