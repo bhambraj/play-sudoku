@@ -1,7 +1,7 @@
 .cell {
   background-color: lightyellow;
   border-style: solid;
-  border-color: grey;
+  border-color: lightgrey;
   /* center the cell content */
   justify-content: center;
   align-items: center;
@@ -10,4 +10,14 @@
   font-size: 2rem;
   font-weight: bold;
   color: maroon;
+}
+
+.disabledCell {
+  background-color: gray;
+  color: rebeccapurple;
+}
+
+.highlightCell {
+  background-color: blue;
+  color: white;
 }
