@@ -1,0 +1,11 @@
+.container {
+  display: inline-block;
+  border: 2px solid black;
+  padding: 0.5%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 60px);
+  grid-template-rows: repeat(9, 60px);
+  grid-gap: 5px;
+}

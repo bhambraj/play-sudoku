@@ -1,0 +1,13 @@
+.cell {
+  background-color: lightyellow;
+  border-style: solid;
+  border-color: grey;
+  /* center the cell content */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: Arial;
+  font-size: 2rem;
+  font-weight: bold;
+  color: maroon;
+}
