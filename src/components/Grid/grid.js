@@ -23,27 +23,18 @@ class Grid extends Component {
 
     cellClicked(event) {
         // If a cell is filled in with a value from the puzzle itself, there should be no further action allowed
-        const isDisabledCell = event.target.className.toString().indexOf('disabledCell') !== -1;
+        const isDisabledCell = event.target.className.toString().indexOf('disabled') !== -1;
         if (isDisabledCell) return;
         /**
          * Cells active state should change to the recently clicked cell
          * Removes previously selected section
          */
-        const highlightedCells = document.getElementsByClassName('highlightCell');
+        const highlightedCells = document.getElementsByClassName('activeCell');
         for (let item of highlightedCells) {
             const classNames = item.className;
-            item.className = classNames.replace(' highlightCell', '');
+            item.className = classNames.replace(' activeCell', '');
         }
-        event.target.className += ' highlightCell';
-        /**
-         * TODOs:
-         * 
-         * 2. For now, allow entries from 1 to 9 (keydown) and check that keycode characters are valid 1-9
-         */
-    }
-
-    rowClicked(event) {
-        console.log('event.target.value -> ', event.target.value);
+        event.target.className += ' activeCell';
     }
 
     render() {

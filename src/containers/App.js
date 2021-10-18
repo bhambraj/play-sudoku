@@ -8,14 +8,14 @@ import React, { Component } from 'react';
 class App extends Component {
   onRowClicked(event) {
     const valueToSet = event.target.id.substr(4);
-    const highlightedCells = document.getElementsByClassName('highlightCell');
+    const highlightedCells = document.getElementsByClassName('activeCell');
     if (highlightedCells.length === 1) {
       if (valueToSet === '10') {
         // Clear from highlighted field
         highlightedCells[0].innerHTML = '';
       } else {
-        highlightedCells[0].innerHTML = valueToSet;
         // Set the value to the selected cell
+        highlightedCells[0].innerHTML = valueToSet;
       }
       // Check if the logic is valid
     } else return;

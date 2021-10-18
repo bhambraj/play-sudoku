@@ -12,12 +12,12 @@
   color: maroon;
 }
 
-.disabledCell {
+.disabled {
   background-color: gray;
   color: rebeccapurple;
 }
 
-.highlightCell {
+.activeCell {
   background-color: blue;
   color: white;
 }

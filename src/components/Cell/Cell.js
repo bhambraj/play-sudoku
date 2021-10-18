@@ -9,7 +9,7 @@ const Cell = ({
     sudokuIdx
     }) => {
     return (
-        <div className={`cell idx#${sudokuIdx} ${disabled ? 'disabledCell': ''}`}
+        <div className={`cell idx#${sudokuIdx} ${disabled ? 'disabled': ''}`}
             id={`cell-${rowNum}${colNum}`}
             onClick={cellClicked}
             >
