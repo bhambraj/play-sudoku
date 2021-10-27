@@ -1,7 +1,5 @@
 .container {
   display: inline-block;
-  border: 2px solid black;
-  padding: 0.5%;
 }
 .grid {
   display: grid;
