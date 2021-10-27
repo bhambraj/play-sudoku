@@ -1,6 +1,6 @@
-import './Row.css';
+import './ActionRow.css';
 
-const Row = ({onBtnClicked}) => {
+const ActionRow = ({onBtnClicked}) => {
     const validChoices = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     return (
         <div className="actionRowContainer">
@@ -22,4 +22,4 @@ const Row = ({onBtnClicked}) => {
     );
 };
 
-export default Row;
+export default ActionRow;
